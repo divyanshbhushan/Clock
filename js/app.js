@@ -68,18 +68,23 @@ setInterval(function () {
         clockType.classList.replace('24hr', '12hr');
     });
     
+    // Changing Hours as per clock Type
     if (clockType.classList.contains('12hr')) {
          if(currentHour == 12){
             currentHour =  12
+            am_pm.innerHTML = "pm"
         }
         else if(currentHour > 12){
             currentHour = currentHour - 12;
+            am_pm.innerHTML = "am"
         }
         else{
             currentHour
+            am_pm.innerHTML = "pm"
         }
-        console.log(currentHour)
     } 
     else if(clockType.classList.contains('24hr')) {
+        currentHour = currentTime.getHours()
+        am_pm.style.display = "none"
     }
 }, 1000);
