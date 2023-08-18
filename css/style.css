@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+body{
+    scroll-behavior: smooth;
+}
+.nav_bar{
+    height: 4rem;
+    border-bottom: 2px solid #c8c8c8;
+    background: #f0f0f0;
+    padding: 0 4rem;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.branding{
+    font-weight: 600;
+    color: #7E22CE;
+}
+.navbar > .nav_list{
+    display: flex;
+    align-items: center;
+}
+.navbar > .nav_list > .nav_item{
+    font-weight: 500;
+    margin: 0 .3rem;
+}
+.bg_fullscreen{
+    background: url(/images/svg/fullscreen.svg);
+}
+.bg_fullscreen_exit{
+    background: url(/images/svg/fullscreen_exit.svg);
+}
+.full_screen_toggler{
+    --wh: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
+    width: var(--wh);
+    height: var(--wh);
+    background-size: cover;
+    cursor: pointer;
+    filter: invert(1);
+}
+.clock_sect{
+    height: 100vh;
+    background: url(/images/dawn_landscape_sunset_beach.webp);
+    background-size: cover;
+    background-position: center;
+}
