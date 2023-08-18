@@ -49,10 +49,24 @@ body{
 }
 .clock_sect{
     height: 100vh;
-    background: url(/images/dawn_landscape_sunset_beach.webp);
     background-size: cover;
     background-position: center;
 }
 .dropdown-item{
     cursor: pointer;
+}
+.customization_sect{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    margin: auto;
+}
+.customization_sect > .btn_group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70vw;
+    margin: auto;
 }

@@ -30,31 +30,35 @@
     <div class="full_screen_toggler bg_fullscreen" onclick="toggleFullscreen()" id="fullScreenToggler"></div>
 
     <!-- Main Clock -->
-    <section class="clock_sect">
+    <section class="clock_sect default_theme font_poppins">
         <div class="top_bar">
-            <span class="hours"></span>
-            <span class="minutes"></span>
-            <span class="seconds"></span>
-            <span class="am_pm"></span>
+            <span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span><span class="am_pm"></span>
         </div>
-        <div class="bottom_bar">
-            <span class="date"></span>
-            <span class="day"></span>
-            <span class="month"></span>
-            <span class="year"></span>
+        <div class="bottom_bar"><span class="date"></span>-<span class="month"></span>-<span class="year"></span>&nbsp;<span class="day"></span>
         </div>
     </section>
     <!-- Customization -->
     <section class="customization_sect">
-      <!-- Example single danger button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle 12hr" data-bs-toggle="dropdown" id="clockType" aria-expanded="false">
+      <div class="btn_group">
+  <!-- Change Clock Type -->
+  <button type="button" class="btn btn-secondary dropdown-toggle customization_btn 12hr" data-bs-toggle="dropdown" id="clockType" aria-expanded="false">
     Clock Type: 12 Hour
   </button>
   <ul class="dropdown-menu">
     <li id="12hrClock" class=" dropdown-item">12 Hour</li>
     <hr class="dropdown-divider">
     <li id="24hrClock" class=" dropdown-item">24 Hour</li>
+  </ul>
+  <!-- Background Select -->
+  <button type="button" class="btn btn-secondary dropdown-toggle customization_btn 12hr" data-bs-toggle="dropdown" id="bgDropdown" aria-expanded="false">
+    Month Style: Full Name
+  </button>
+  <ul class="dropdown-menu">
+    <li id="monthFullName" class=" dropdown-item">Full Name</li>
+    <hr class="dropdown-divider">
+    <li id="monthShortName" class=" dropdown-item">Short Name</li>
+    <hr class="dropdown-divider">
+    <li id="monthNumber" class=" dropdown-item">Month Number</li>
   </ul>
 </div>
     </section>

@@ -34,3 +34,17 @@
 .font_satisfy{
     font-family: 'Satisfy', cursive;
 }
+
+/* Fonts */
+.default_theme{
+    background: url(/images/dawn_landscape_sunset_beach.webp);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0f0f0f;
+}
+.default_theme > .top_bar{
+    font-weight: 700;
+    font-size: 6rem;
+}
